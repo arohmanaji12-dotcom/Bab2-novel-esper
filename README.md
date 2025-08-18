@@ -1,1 +1,429 @@
-# Bab2-novel-esper
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perjalanan Para Esper</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1a0a1a;
+    color: #e0d8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  h1 {
+    margin-top: 20px;
+    color: #c084fc;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    background: #2b0f2b;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+  }
+
+  .menu button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #4b197b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .menu button:hover {
+    background: #6a23a2;
+  }
+
+  .konten {
+    margin-top: 30px;
+    max-width: 800px;
+    padding: 20px;
+    background: #2b0f2b;
+    border-radius: 15px;
+    line-height: 1.6;
+    display: none;
+    white-space: pre-wrap;
+  }
+
+  .konten.active {
+    display: block;
+  }
+
+  .exit-btn {
+    margin-top: 20px;
+    padding: 8px 12px;
+    background: #c084fc;
+    color: #1a0a1a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h1>Perjalanan Para Esper</h1>
+
+<div class="menu">
+  <button onclick="showContent('judul')">Judul</button>
+  <button onclick="showContent('sinopsis')">Sinopsis</button>
+  <button onclick="showContent('profil')">Profil Karakter</button>
+  <button onclick="showContent('latar')">Latar Belakang</button>
+  <button onclick="showContent('bab1')">Bab 1</button>
+  <button onclick="showContent('bab2')">Bab 2</button>
+</div>
+
+<div id="judul" class="konten">
+  <h2>Judul</h2>
+  <p>Perjalanan Para Esper</p>
+  <button class="exit-btn" onclick="closeContent('judul')">Tutup</button>
+</div>
+
+<div id="sinopsis" class="konten">
+  <h2>Sinopsis</h2>
+  <p>Ada enam kekuatan esper yang tertidur dalam jiwa-jiwa terpilih-dan kini, dunia mulai terbangun...</p>
+  <p>Chandra, seorang remaja biasa dengan masa lalu penuh amarah, tidak pernah menyangka bahwa kekuatan telekinesis dalam dirinya hanyalah awal dari sesuatu yang jauh lebih besar...</p>
+  <p>Di tengah dunia modern yang tidak menyadari ancaman yang mengintai, mereka menemukan bahwa ada enam kekuatan esper utama...</p>
+  <p>Namun semakin dalam mereka menggali, semakin jelas bahwa kekuatan bukanlah anugerah semata-melainkan ujian terhadap jiwa dan pilihan...</p>
+  <p>Sebuah kisah fantasi spiritual tentang pertumbuhan, persahabatan, dan takdir, dalam dunia yang berdetak di antara realita dan yang tak terlihat.</p>
+  <button class="exit-btn" onclick="closeContent('sinopsis')">Tutup</button>
+</div>
+
+<div id="profil" class="konten">
+  <h2>Profil Karakter</h2>
+  <p><strong>Chandra:</strong> Laki-laki biasa, tinggal bersama ibu, memiliki kekuatan telekinesis yang baru bangkit.</p>
+  <p><strong>Zenki:</strong> Pemuda pendiam, memiliki kekuatan spiritual Nethermind.</p>
+  <p><strong>Kael:</strong> Mantan anggota Aetherion, menyimpan rahasia masa lalu.</p>
+  <p><strong>Mahira:</strong> (Profil Mahira bisa diisi sesuai cerita)</p>
+  <button class="exit-btn" onclick="closeContent('profil')">Tutup</button>
+</div>
+
+<div id="latar" class="konten">
+  <h2>Latar Belakang</h2>
+  <p>Dunia modern yang tampak normal, namun menyimpan ancaman dari makhluk bayangan dan simbol kuno yang tersebar. Sekolah, jalan-jalan kota, dan kuil kuno menjadi titik-titik penting dalam perjalanan para esper.</p>
+  <button class="exit-btn" onclick="closeContent('latar')">Tutup</button>
+</div>
+
+<div id="bab1" class="konten">
+  <h2>Bab 1: Mencari Kebenaran</h2>
+  <p>
+Namanya adalah Chandra dirinya hanyalah seorang manusia biasa. Ia adalah seorang laki-laki yang tinggal berdua bersama ibunya, dari kecil Chandra hanya dirawat oleh Ibunya dengan penuh kasih sayang yang hangat. Ayah Chandra sudah pergi meninggalkan Chandra di saat dirinya masih berumur lima tahun. Ibu dan Ayahnya bercerai, sehingga Ibu Chandra lah yang memilih untuk merawat Chandra dengan penuh kasih sayang. Saat ini, Chandra sedang menempuh pendidikan di sebuah SMAN di kota Kyoku kelas delapan.
+
+Di sekolahnya, Chandra dikenal sebagai anak yang aneh karena lebih memilih untuk menyendiri. Teman-temannya menganggap Chandra sebagai seorang introvert, sebab setiap kali masuk kelas, ia hampir tidak pernah berbicara dengan siapa pun. Namun, mereka juga tidak terlalu peduli dengan kebiasaannya itu.
+
+Di balik sifat pendiam dan misteriusnya, Chandra sebenarnya telah lama mendalami ilmu spiritual. Sejak kecil, tepatnya sejak usia sepuluh tahun, ia sudah tertarik dengan hal-hal yang berkaitan dengan kekuatan psikis dan spiritual. Ia selalu membaca buku-buku yang ia koleksi. Buku tersebut adalah koleksi lama Ayahnya yang sudah berdebu seperti tak dibuka selama berabad-abad. Isi buku-buku tersebut membahas ilmu seperti psikis dan spiritual esper. Selama membaca buku tersebut, dirinya semakin terobsesi akan dunia dengan kekuatan spiritual ataupun esper. Tak jarang juga dia selalu berandai-andai dirinya memiliki kekuatan tersebut.
+
+Dalam buku tersebut berisi berbagai metode untuk membangkitkan kekuatan esper, salah satunya yaitu telekinesis. Beragam cara telah ia coba, seperti bermeditasi, mengamati lingkungan sekitar, dan bereksperimen dengan telekinesis-kemampuan untuk menggerakkan benda dengan kekuatan pikiran. Ia mencoba mengendalikan kertas kosong, berharap suatu hari bisa menguasai teknik ini sepenuhnya. Dalam teori yang ia pelajari, telekinesis merupakan kemampuan seorang esper untuk mengendalikan benda mati pada tahap awal, dan pada tingkat yang lebih tinggi, seseorang dapat mengendalikan serta merasakan aura makhluk hidup di sekitarnya.
+
+Namun, meskipun sudah berlatih selama lima tahun, Chandra belum juga berhasil membangkitkan kekuatannya. Satu-satunya perubahan yang ia rasakan hanyalah peningkatan fokus dan ketenangan mental. Sifat penyendirinya pun tetap bertahan hingga kini.
+
+Namun pada suatu sore ada suatu kejadian yang merubah perjalanan hidup Chandra sepenuhnya. Saat itu Chandra pulang sekolah dengan berjalan kaki seperti biasa. Sekolahnya memang tidak terlalu jauh dari rumah, dan keluarganya juga memiliki keterbatasan dalam hal kendaraan. Namun, hari itu berbeda dari biasanya.
+
+"Ini semua karena kelas tambahan! Aku juga belum menyelesaikan pekerjaan rumah. Terpaksa aku harus pulang selarut ini," gumamnya kesal.
+
+Langit sudah mulai gelap. Chandra memutuskan untuk mengambil jalan pintas agar bisa cepat sampai di rumah. Kebetulan, jalan pintas tersebut melewati sebuah bangunan kantor yang sudah terbengkalai selama lima belas tahun.
+
+Saat melewati jalan setapak menuju bangunan itu, Chandra teringat peringatan ibunya. Jangan pernah melewati daerah itu sendirian. Banyak preman dan berandalan yang sering memalak orang di sana.
+
+Namun, sudah terlambat untuk berpikir ulang.
+
+"Aduh, kenapa baru ingat sekarang?" keluhnya sambil mempercepat langkah.
+
+Tiba-tiba-
+BRAKK!
+Sebuah tendangan keras menghantam punggungnya dari belakang. Chandra terjerembap ke tanah, tubuhnya terasa nyeri.
+
+"Woe, kawan-kawan! Lihat siapa yang kita temukan di sini!"
+
+Lima orang preman berdiri mengelilinginya. Salah satu dari mereka, yang tampak seperti pemimpin, menatap Chandra dengan sinis.
+
+"Woi, bocah! Berani sekali kau melewati daerah kami! Apa kau tidak tahu ini wilayah kekuasaan kami?" bentaknya dengan nada mengancam.
+
+Chandra mengusap punggungnya yang masih sakit. Ia menatap tajam ke arah mereka dan berkata dengan sinis, "Tch, orang-orang sampah seperti kalian, yang hanya berani mengeroyok anak SMA sepertiku, tidak lebih baik dari kotoran hewan. Lemah!"
+
+Perkataan Chandra sukses memancing emosi mereka. Namun, sebelum mereka menyerangnya secara bersamaan, Chandra segera menyela,
+
+"Heh! Kalau kalian benar-benar jantan, ayo satu lawan satu denganku. Jika aku menang, aku boleh lewat. Jika aku kalah, ambil saja barang berhargaku. Bagaimana? Cukup adil, bukan?"
+
+Preman-preman itu terdiam sejenak, lalu salah satu dari mereka maju. Pria bertubuh besar namun sedikit gemuk itu menyeringai licik.
+
+"Hei, bocah! Kau tahu? Hari sial itu tidak pernah ada di kalender!" katanya sambil mengepalkan tinju.
+
+Chandra hanya tersenyum santai. "Kalau begitu, ayo maju! Mau berapa lama lagi kita tatap-tatapan seperti ini?"
+
+Pada saat itu, Chandra merasakan sesuatu yang aneh. Ada energi asing yang muncul dari dalam tubuhnya, membuat adrenalinnya meningkat drastis.
+
+Pria besar itu akhirnya bergerak. Ia berlari ke arah Chandra dan mengayunkan tinjunya dengan kekuatan penuh.
+
+Namun-
+DUMP!
+Sebelum pukulan itu mengenai wajahnya, Chandra menghempaskan tangannya ke tanah. Seketika, sebuah penghalang tak terlihat terbentuk di sekelilingnya. Tubuh preman itu terpental jauh begitu mengenai penghalang tersebut.
+
+"Ugh! Uhuk... Apa-apaan ini?! Ada sesuatu yang melindunginya!"
+
+Preman itu terbatuk-batuk, wajahnya penuh dengan keterkejutan.
+
+Di mata mereka, Chandra hanya menggerakkan tangannya sedikit. Tapi di mata Chandra sendiri, ia melihat sebuah dinding pelindung bercahaya biru yang mengelilinginya.
+
+"Jadi... begini rasanya telekinesis? Semua latihan ini akhirnya membuahkan hasil!" pikirnya penuh kegirangan.
+
+Ketakutan, para preman itu perlahan mundur.
+
+"Semuanya, lari! Anak ini dirasuki setan!" teriak salah satu dari mereka.
+
+Chandra terkekeh pelan. "Seharusnya aku berterima kasih kepada mereka. Gara-gara mereka, aku bisa membangkitkan kekuatanku!"
+
+Dengan senyum puas, Chandra melanjutkan perjalanannya pulang. Sesampainya di rumah, Chandra langsung masuk ke kamar tanpa memberi tahu ibunya tentang kejadian tadi.
+
+Ia masih teringat bagaimana energi itu muncul dari tubuhnya. Dalam situasi terpojok, nalurinya secara otomatis mengaktifkan kekuatan telekinesis.
+
+Untuk memastikan kekuatannya benar-benar bangkit, ia mengambil selembar kertas kosong, meletakkannya di meja belajar, lalu duduk di depannya.
+
+Ia menenangkan pikirannya dan mencoba menggerakkan kertas itu. Perlahan... kertas itu mulai melayang dengan mudah.
+
+Namun, ada satu hal yang membuatnya heran. Kali ini, ia tidak melihat aura biru seperti saat bertarung tadi sore.
+
+"Hmm... Kenapa ya? Aku tetap bisa mengendalikan benda ini dengan mudah, tapi kenapa aku tidak bisa melihat atau memunculkan aura biru seperti tadi?" gumamnya bingung.
+
+Namun, ia tidak terlalu memikirkannya. Yang terpenting, impiannya selama lima tahun ini akhirnya menjadi kenyataan.
+
+Lelah setelah melalui hari yang panjang, Chandra tanpa sadar tertidur di kursi di depan meja belajarnya.
+
+Keesokan paginya, Chandra terbangun dengan kepala sedikit pusing. Ia masih duduk di kursinya, dengan tangan yang tergeletak di atas meja.
+
+"Aku tertidur?" gumamnya sembari mengusap wajahnya.
+
+Ia menatap kertas yang semalam berhasil ia gerakkan dengan telekinesis. Perasaan aneh masih menggelayut di benaknya. Mengapa saat melawan preman, ia bisa melihat aura biru, tapi saat berlatih sendiri, hal itu tidak muncul?
+
+Chandra mencoba lagi. Ia menatap kertas itu dengan penuh konsentrasi. Kertas itu melayang, tetapi tetap tidak ada aura biru yang muncul.
+
+"Apa mungkin ini hanya terjadi saat emosiku memuncak?" pikirnya.
+
+Tiba-tiba, terdengar suara ketukan di pintu. Tok... tok... tok...
+
+"Chandra, ayo sarapan dulu," suara ibunya terdengar dari luar kamar.
+
+Chandra menghela napas panjang. "Iya, Bu. Aku segera keluar." Sebelum beranjak, ia melirik kertas itu sekali lagi. Ada banyak pertanyaan yang belum terjawab, dan ia tahu bahwa ini barulah permulaan dari sesuatu yang lebih besar.
+  </p>
+  <button class="exit-btn" onclick="closeContent('bab1')">Tutup</button>
+</div>
+
+<div id="bab2" class="konten">
+  <h2>Bab 2: Pertemuan dengan Zenki</h2>
+  <p>
+Dua hari setelah kejadian rumit itu, Chandra masih belum bisa lepas dari pertanyaan yang terus menghantui pikirannya. Sejak dirinya membangkitkan kekuatan esper, ia memilih untuk diam dan merahasiakannya. Jika kekuatan itu sampai tersebar ke mana-mana, ia yakin masalah akan semakin rumit dan sulit dikendalikan. Oleh karena itu, Chandra berusaha menjalani hidupnya seperti biasa-bersekolah, mengerjakan tugas, membantu membersihkan rumah, dan melakukan aktivitas normal lainnya.
+
+Namun, pada hari ketiga setelah kebangkitannya, Chandra kembali ke sekolah seperti biasa. Ia duduk menyendiri di kelas, berbicara hanya jika diperlukan. Hari itu, pelajaran berlangsung normal tanpa ada kejadian aneh sedikit pun. Para siswa fokus mengerjakan tugas yang diberikan oleh pak guru yang berlarut dalam keheningan. 
+
+Tiba-tiba, suara ketukan terdengar dari pintu kelas yang memecahkan suasana keheningan di dalam ruang kelas.
+
+Tok tok tok
+
+"Silakan masuk," ujar pak guru dengan tenang.
+
+Saat pintu mulai terbuka, terlihat jari-jari seseorang yang perlahan mendorongnya, seolah ragu atau takut untuk masuk ke dalam kelas. Ketika pintu terbuka lebar, tampak seorang anak laki-laki berdiri di ambang pintu. Ia mengenakan seragam sekolah, tetapi seragamnya sedikit berbeda dari milik Chandra dan teman-temannya.
+
+Chandra langsung menebak dalam hati, "Pasti dia murid baru yang akan melengkapi kelas ini. Apalagi, bangku di sampingku masih kosong," gumamnya dalam hati.
+
+Dengan rasa penasaran, Chandra memperhatikan anak itu dengan saksama. Namun, sebelum ia bisa menebak lebih jauh, suara guru tiba-tiba terdengar, memecah keheningan.
+
+"Hei, Nak, mau sampai kapan kau berdiri di depan pintu? Masuklah dan perkenalkan dirimu di depan kelas," ujar sang guru.
+
+Anak itu mulai melangkah perlahan menuju ke depan kelas, raut wajahnya menunjukkan rasa malu dan gugup. Dengan hati-hati, ia menghampiri sang guru, lalu menjabat tangannya dengan sopan.
+
+Pak guru menundukkan sedikit kepalanya dan berbisik lembut, "Oke, sekarang perkenalkan dirimu kepada mereka. Mereka akan menjadi rumah dan teman barumu."
+
+Tanpa ragu, tiba-tiba anak itu berbicara dengan nada lantang, menarik perhatian seluruh kelas.
+
+"Perhatian semuanya! Perkenalkan, namaku Zenki, biasa dipanggil Zen. Aku adalah siswa pindahan dari SMA Kisomu. Aku harap kalian semua bisa menjadi temanku dan menerima kehadiranku di sini. Terima kasih!"
+
+Seisi kelas langsung terdiam, beberapa murid saling berpandangan, terkejut dengan cara Zenki memperkenalkan dirinya yang begitu percaya diri.
+
+Saat semua mata siswa tertuju pada Zenki, Chandra justru tidak terlalu memperdulikan hal tersebut. Ia kembali fokus pada buku dan penanya, melanjutkan tugas yang belum ia selesaikan dari Pak Guru.
+
+Pak Guru yang melihat cara Zenki memperkenalkan diri tertawa terbahak-bahak sambil menepuk pundaknya.
+
+"Hahaha! Kamu ini lucu sekali, Nak. Sekarang, coba pilih, kamu ingin duduk di mana?"
+
+Zenki melirik ke sekeliling kelas, tetapi hanya tersisa satu bangku kosong-di samping Chandra. Dengan nada sedikit gugup, ia menjawab,
+
+"Pak, saya ingin duduk di sudut belakang, di samping anak itu. Lagi pula, hanya bangku itu yang masih kosong."
+
+Lalu, Pak Guru mengangkat tangannya dan menunjuk ke arah Chandra. Dengan suara keras dan lantang, beliau berkata, "Hei, Ndra! Anak baru ini ingin duduk di sebelahmu. Bapak harap kamu tidak mencuekinya seperti teman-teman yang lain."
+
+Mendengar hal itu, seisi kelas langsung tertawa terbahak-bahak. "Hahaha!" Namun, seperti biasa, Chandra tidak menghiraukan gurauan mereka. Baginya, semua itu hanyalah angin lalu-sesuatu yang sudah menjadi bagian dari kehidupannya sehari-hari.
+
+Zenki kemudian menghampiri dan duduk perlahan di sebelah Chandra awal nya Chandra merasa canggung untuk berbincang bincang dengan Zen, dirinya sedikit merasa risih karena dirinya sendiri sudah terbiasa duduk sendirian dan nyaman dengan kesendirian nya.
+
+Selama pelajaran berlangsung, Chandra enggan berbicara sedikit pun kepada Zenki. Sebagai murid baru, Zenki merasa tidak enak karena sejak tadi ia dan Chandra hanya terdiam tanpa berbincang sama sekali.
+
+---
+
+Saat jam istirahat tiba, Zenki berusaha menarik perhatian Chandra. Ia mencoba membuka percakapan dengan topik yang berkaitan dengan psikologi. Dengan santai, ia menatap Chandra dan mulai berbicara,
+
+"Hei, namamu Chandra, kan? Salam kenal, aku Zenki."
+
+Chandra yang mendengar Zenki tiba-tiba menyapanya, menoleh sebentar dan menjawab singkat, "Oh, ya. Namaku Chandra. Salam kenal juga."
+
+Zenki merasa jengkel dengan respon singkat itu. Dalam hati, ia menggerutu, "Apa-apaan sih dia ini? Orang mau ngobrol malah diabaikan. Sok dingin banget."
+
+Namun, Zenki tidak menyerah. Ia mencoba membuka topik baru, kali ini dengan nada yang lebih sopan dan halus.
+
+"Oh iya, Chandra. Aku dengar kamu cukup pendiam di kelas ini. Kenapa, sih? Ada alasan tertentu?" tanyanya dengan penasaran.
+
+Chandra, yang jarang diajak bicara lebih dulu oleh orang lain, akhirnya menoleh dan menatap Zenki dengan serius.
+
+"Aku diam begini ada alasannya. Nanti kamu juga bakal tahu sendiri," jawabnya dengan nada sedikit kesal.
+
+Melihat Chandra mulai tertarik dengan pembicaraan, Zenki pun tersenyum iseng dan mencoba memancing reaksinya.
+
+"Heh, aku tahu kok. Sebenarnya kamu ingin diajak ngobrol, tapi gengsi, ya?" katanya dengan nada menggoda dan senyum mengejek.
+
+Chandra yang mendengar itu langsung mengangkat satu alisnya, ekspresinya berubah sedikit jengkel.
+
+"Hei, maksudmu apa? Ngajak ribut?" tanyanya dengan nada menantang.
+
+Dalam hati, Zenki tertawa puas. "Hahaha, akhirnya dia terpancing juga."
+
+Namun, bukannya menjawab, ia justru terkekeh pelan. Melihat reaksi itu, Chandra semakin kesal. Ia yang tadinya duduk santai, kini menegakkan bahunya dan kembali bertanya,
+
+"Hei, aku tanya sekali lagi. Kau ngajak berantem, ya?" ucapnya dengan senyum kesal.
+
+Zenki, yang sejak tadi hanya menggoda, akhirnya tertawa lepas dan menjawab dengan nada santai,
+
+"Hahaha! Kamu ini lucu juga, ya? Dari luar kelihatan sok dingin dan misterius, tapi ternyata asyik diajak ngobrol. Aku rasa kita bisa jadi teman baik!"
+
+Chandra yang mendengar itu hanya mendengus, tapi sudut bibirnya sedikit terangkat, seolah menahan senyum.
+
+Zenki pun mengulang pertanyaannya, kali ini dengan nada yang sedikit lebih lembut dan meyakinkan, "Jadi, kita bisa jadi teman baik, kan?"
+
+Chandra, yang selama ini tidak terlalu mengenal arti pertemanan, merasakan sesuatu yang hangat di hatinya. Baru pertama kali ada seseorang yang benar-benar ingin berteman dengannya. Matanya sedikit bersinar, dan tanpa sadar, air mata tipis hampir terbentuk di sudutnya.
+
+Ia tersenyum, lalu menjawab tanpa ragu, "Hahaha, kamu memang pandai, ya, membuatku tersentuh sekaligus tertawa. Tentu saja, kenapa tidak? Kita pasti bisa menjadi teman yang baik!"
+
+Zenki yang mendengar jawaban Chandra seperti itu senyum nya pun melebar dan matanya berbinar binar "makasih banget, gimana kalau nanti kita pulang barengan?" Kebetulan aku cuma tinggal sendiri dan gapunya kedua orang tua."
+
+Chandra yang mendengar pernyataan Zenki bahwa ia tidak memiliki kedua orang tua merasa semakin iba dan tersentuh.
+
+"Oh, baiklah. Aku nggak keberatan sama sekali, kok," jawabnya dengan tulus.
+
+Melihat Zenki tampak senang, Chandra pun menambahkan, "Kalau mau menginap di rumahku juga nggak apa-apa. Lagipula, aku hanya tinggal berdua dengan ibuku."
+
+Setelah sedikit ragu, ia akhirnya bertanya dengan wajah penuh kebingungan, "Oh iya, kalau boleh tahu, ke mana kedua orang tuamu, Zen?"
+
+Mendengar pertanyaan itu, Zenki terdiam sejenak. Ia tidak ingin langsung membahasnya, jadi ia berusaha menghindar dengan jawaban ringan,
+
+"Oh, orang tuaku ya? Nanti aja deh, Ndra. Aku ceritain di perjalanan pulang," katanya sambil tersenyum kecil, mencoba mengalihkan suasana.
+
+Selama jam pelajaran berlangsung Chandra dan Zen terlihat akur dan saling bantu membantu ketika salah satu dari mereka tidak paham tentang pelajaran yang di pelajari.
+
+Saat senja mulai menyelimuti kota tepatnya jam lima sore bel sekolah pun berbunyi menandakan kegiatan belajar mengajar telah usai dan murid di perbolehkan untuk pulang.
+Zenki dan Chandra bergegas menyandang tas mereka dan menuju ke gerbang keluar sekolah. 
+
+Selama di perjalanan pulang mereka jalan berdampingan dan saling berirama sore itu udara terasa sedikit dingin dan terasa hening serta sepi, Zen memiliki perasaan yang kurang enak terhadap apa yang sedang terjadi namun berusaha tak menghiraukan nya agar Chandra tidak ikut khawatir, namun di saat itu
+
+Chandra, yang masih penasaran dengan latar belakang Zenki, akhirnya bertanya lagi, "Jadi, sekarang kamu bisa cerita tentang orang tuamu, Zen?"
+
+Zenki menghela napas pelan. "Ya... sebenarnya, mereka sudah lama tiada. Aku tumbuh di panti asuhan sebelum akhirnya tinggal sendiri."
+
+Chandra terdiam, merasa bersalah karena telah menanyakannya. Namun sebelum ia sempat merespons, tiba-tiba mereka merasakan hawa aneh di sekitar mereka. Udara mendadak terasa lebih berat, dan lampu-lampu jalanan mulai berkedip-kedip seakan ada gangguan listrik.
+
+Zenki dan Chandra saling bertatapan, merasakan ada sesuatu yang tidak beres.
+
+"Zen, kau merasakan ini juga?" tanya Chandra dengan suara pelan namun waspada.
+
+Zenki mengangguk. "Ya... ini bukan sesuatu yang biasa."
+
+Tiba-tiba, dari kejauhan, terdengar suara langkah kaki menyeret di atas aspal. Suara itu terdengar tidak wajar-seperti sesuatu yang berat sedang bergerak.
+
+Mereka berdua menoleh ke arah suara itu, dan di ujung jalan yang remang-remang, terlihat sesosok bayangan tinggi berdiri diam. Sosok itu samar, tubuhnya seperti diselimuti kabut gelap.
+
+Jantung Chandra mulai berdegup lebih cepat. Ia merasa merinding tanpa alasan yang jelas. "Zen... apa itu?" bisiknya.
+
+Zenki menatap sosok tersebut dengan mata tajam, lalu berbisik, "Aku nggak tahu... tapi sepertinya dia bukan manusia biasa."
+
+Tiba-tiba, sosok itu bergerak cepat ke arah mereka, membuat angin berhembus kencang. Zenki dengan refleks menarik tangan Chandra dan berteriak, "LARI!"
+
+Mereka berdua berlari sekencang mungkin, namun entah mengapa, bayangan itu terus mendekat tanpa mengeluarkan suara. Sesuatu yang gelap sedang mengincar mereka-dan mereka harus segera mencari cara untuk melarikan diri atau melawan.
+
+Sejauh apa pun mereka berlari, rasanya seperti hanya berputar-putar kembali ke tempat semula. Jalanan yang mereka lewati selalu sama-pohon yang sama, lampu jalan yang sama, bahkan suara gemerisik daun yang tak berubah.
+
+Chandra mulai merasakan sesuatu yang aneh. Dengan cepat, ia menyentak tangan Zenki dan menggenggamnya erat. Dengan nada serius, ia berkata, "Hei, Zen! Aku nggak tahu kenapa, tapi rasanya sejak tadi kita cuma berputar-putar di tempat yang sama. Sepertinya kita sudah terjebak di dunia yang berbeda!"
+
+Zenki terdiam, napasnya memburu. Ia menoleh ke sekeliling, mencoba memahami situasi. Namun sebelum ia sempat berpikir lebih jauh, Chandra melanjutkan dengan tegas, "Nggak ada pilihan lain! Mau nggak mau, kita harus menghadapi makhluk itu!"
+
+Mata Zenki melebar, terkejut dengan keberanian Chandra. Dengan nada panik, ia berbisik, "Menghadapi? Tapi... gimana caranya?! Yang punya kekuatan di sini cuma aku-"
+
+Zenki langsung terhenti, menyadari bahwa ia keceplosan. Wajahnya menegang, sementara Chandra menatapnya dengan ekspresi penuh keterkejutan.
+
+"Tunggu... apa maksudmu barusan, Zen?" tanya Chandra, matanya menyipit curiga.
+
+Zenki menggigit bibirnya. Ia baru saja membocorkan rahasia besarnya-bahwa dirinya bukan orang biasa.
+
+Tepat sebelum Chandra sempat merespons, tiba-tiba makhluk misterius itu menyerang. Dengan kekuatan mengerikan, ia melemparkan beberapa bongkahan batu besar yang berserakan di sekitar mereka. Menyadari bahaya yang mengancam, Chandra refleks mengulurkan tangannya, menggunakan kekuatannya untuk menghentikan batu-batu itu di udara sebelum menghantam mereka.
+
+Zenki terpaku, jantungnya berdebar kencang. Ia baru saja melihat sesuatu yang tak pernah ia duga-Chandra juga memiliki kekuatan.
+
+"Ka-kau..." Zenki masih sulit berkata-kata. "Kau juga seorang esper?"
+
+Chandra menoleh cepat, ekspresinya waspada. "Kita bicarakan nanti!" katanya tegas. Ia mengayunkan tangannya, dan batu-batu besar yang sebelumnya melayang di udara kini melesat kembali ke arah makhluk misterius itu.
+
+Makhluk itu menggeram marah. Tubuhnya yang hitam pekat seolah berdenyut, lalu dari dalam tubuhnya muncul gelombang energi yang menghancurkan batu-batu tersebut menjadi serpihan kecil. Zenki bisa merasakan tekanan luar biasa dari kekuatan lawan mereka.
+
+"Kita harus bekerja sama!" Chandra berseru. "Kalau tidak, kita tidak akan selamat dari ini!"
+
+Zenki menelan ludah. Ia tahu Chandra benar-tak ada lagi gunanya menyembunyikan kekuatannya. Dengan nada serius, ia akhirnya menjawab, "Ya, kita harus bekerja sama."
+
+Lalu, dengan tatapan tegas, Zenki melanjutkan, "Chandra, tolong alihkan perhatian makhluk ini. Aku akan memasuki dunia spiritual. Singkatnya, tubuh asliku tidak akan sadar untuk sementara. Aku akan melawannya di alam bawah sadar. Bisa dibilang, kemampuanku ini disebut Nethermind."
+
+Chandra, yang masih dalam kondisi panik, hanya bisa mendengarkan perkataan Zenki dan mempercayakan semuanya kepadanya. Dengan cepat, ia berusaha mengalihkan perhatian monster tersebut. "Woi, monster jelek! Aku di sini!" Chandra berteriak lantang sambil menggunakan kekuatannya untuk menahan tubuh makhluk itu.
+
+"Zen, apakah masih lama kau memasuki dunia spiritual? Aku nggak bisa menahannya lebih lama lagi!" serunya dengan napas tersengal.
+
+Saat itu juga, Chandra melihat sesuatu keluar dari tubuh Zenki-seperti roh yang berterbangan di udara. Namun, tidak seperti roh pada umumnya yang berwarna putih, aura yang menyelimutinya justru bersinar dalam cahaya ungu misterius.
+
+Wushhh! Roh itu melesat dengan kecepatan tinggi ke arah makhluk tersebut, menciptakan ledakan dahsyat. Boom! Asap tebal menyebar ke segala arah.
+
+Chandra segera membentengi dirinya, berusaha menahan dampak ledakan agar tidak mengenainya. Namun, penglihatannya terhalang oleh kepulan asap yang memenuhi udara.
+
+"A-apa-apaan dengan kekuatan itu?! Hanya satu serangan, tapi dampaknya sebesar ini!"
+
+Saat gumpalan asap mulai menghilang, Chandra menatap ke depan. Ia terkejut bukan kepalang melihat makhluk misterius itu telah tewas dengan kepala remuk dan tubuh hancur. Ia mengedarkan pandangan ke sekeliling, memastikan bahwa roh tersebut benar-benar lenyap. Namun, ketika ia menoleh ke belakang, matanya membelalak melihat tubuh Zenki yang tumbang.
+
+Jantungnya berdegup kencang saat ia bergegas memeriksa denyut nadi Zenki. "Syukurlah, dia hanya pingsan," desahnya lega, meski napasnya masih tersengal.
+
+Dengan enggan, Chandra bersiap menggendong Zenki. "Mau tak mau, aku harus membawanya pulang," gumamnya.
+
+Namun, dalam benaknya, sebuah kesadaran baru mulai tumbuh-ternyata, bukan hanya dirinya yang memiliki kemampuan spesial. Dan ini hanya akan membuat segalanya semakin rumit.
+  </p>
+  <button class="exit-btn" onclick="closeContent('bab2')">Tutup</button>
+</div>
+
+<script>
+function showContent(id) {
+  document.querySelectorAll('.konten').forEach(div => div.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function closeContent(id) {
+  document.getElementById(id).classList.remove('active');
+}
+</script>
+
+</body>
+</html>
