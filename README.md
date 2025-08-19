@@ -425,8 +425,6 @@ function closeContent(id) {
 }
 </script>
 
-</body>
-</html>
 
 <!-- Tombol Like untuk seluruh web -->
 <button id="likeBtn" class="like-btn" onclick="likePost()">👍 Like (<span id="likeCount">0</span>)</button>
