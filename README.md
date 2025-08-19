@@ -456,6 +456,3 @@ function closeContent(id) {
 }
 </script>
 
-</body>
-</html>
-
