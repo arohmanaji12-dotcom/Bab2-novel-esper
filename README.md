@@ -427,3 +427,35 @@ function closeContent(id) {
 
 </body>
 </html>
+
+<!-- Tombol Like untuk seluruh web -->
+<button id="likeBtn" class="like-btn" onclick="likePost()">👍 Like (<span id="likeCount">0</span>)</button>
+
+<script>
+let likeCount = localStorage.getItem("likeCount") ? parseInt(localStorage.getItem("likeCount")) : 0;
+document.getElementById("likeCount").innerText = likeCount;
+
+function likePost() {
+  if(localStorage.getItem("liked") === "true"){ 
+    alert("Kamu sudah pernah like!");
+    return;
+  }
+  likeCount++;
+  document.getElementById("likeCount").innerText = likeCount;
+  localStorage.setItem("likeCount", likeCount);
+  localStorage.setItem("liked", "true");
+}
+  
+function showContent(id) {
+  document.querySelectorAll('.konten').forEach(div => div.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function closeContent(id) {
+  document.getElementById(id).classList.remove('active');
+}
+</script>
+
+</body>
+</html>
+
